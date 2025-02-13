@@ -69,7 +69,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.Bryandche"
                 artifactId = "payunit-android"
-                version = "1.0.4"
+                version = "0.0.1"
 
                 afterEvaluate {
                     from(components["release"])
