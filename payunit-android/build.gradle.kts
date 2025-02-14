@@ -28,11 +28,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17 // Jitpack errors: Changed VERSION_1_8 to VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17 // Jitpack errors: Changed VERSION_1_8 to VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "17" // Jitpack errors: Changed 1.8 to 17
     }
 }
 
@@ -67,9 +67,9 @@ afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
-//                groupId = "com.github.payunit"
-//                artifactId = "payunit-android"
-//                version = "0.0.5"
+                groupId = "com.github.payunit"
+                artifactId = "payunit-android"
+                version = "0.0.9"
 
                 afterEvaluate {
                     from(components["release"])
