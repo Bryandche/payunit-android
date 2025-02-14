@@ -9,6 +9,7 @@ The **PayUnit Android Library** provides a customizable button for processing pa
     - [XML Usage](#xml-usage)
     - [Java Usage](#java-usage)
     - [Kotlin Usage](#kotlin-usage)
+- [Gallery](#gallery)
 - [License](#license)
 
 ## Installation
@@ -59,14 +60,14 @@ To use the PayUnit library in your Android project, follow these steps:
 
    ```groovy
    dependencies {
-       implementation 'com.github.payunit:payunit-android:0.0.5'
+       implementation 'com.github.Bryandche:payunit-android:0.0.10'
    }
    ```
    **Kotlin**
 
    ```kotlin
    dependencies {
-       implementation("com.github.payunit:payunit-android:0.0.5")
+       implementation("com.github.Bryandche:payunit-android:0.0.10")
    }
    ```
 
@@ -128,10 +129,6 @@ To use the `PayUnitButton` in your Java code, follow these steps:
             
         });
    
-       }
-
-       private void startPaymentProcess() {
-           // Implement payment processing logic here
        }
    }
    ```

@@ -67,9 +67,9 @@ afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
-                groupId = "com.github.payunit"
-                artifactId = "payunit-android"
-                version = "0.0.10"
+//                groupId = "com.github.Bryandche"
+//                artifactId = "payunit-android"
+//                version = "0.0.10"
 
                 afterEvaluate {
                     from(components["release"])
